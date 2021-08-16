@@ -164,12 +164,12 @@ This tutorial uses a newly created or dedicated [Azure Key Vault](../key-vault/i
       --resource-group $kvgp
     ```
 
-1. Assign an access policy, including GET, LIST, and SET permissions to the VM's managed identity.
-
+1. Assign an access policy, including GET, LIST, and SET permissions to the VM's managed identity. 
+    **Option1: From Portal**:
     In Azure Key Vault, select to **Access Policies** > **Add Access Policy - Secret Permissions: Get, List, and Set** > **Select Principal**. Enter your [VM's name](#deploy-a-linux-vm-for-your-sap-data-connector), and then select **Add** > **Save**.
 
     For more information, see the [Key Vault documentation](../key-vault/general/assign-access-policy-portal.md).
-
+    **Oprion2: Using CLI scripts**:
 1. Run the following command to get the [VM's principal ID](#deploy-a-linux-vm-for-your-sap-data-connector), entering the name of your Azure resource group:
 
     ```azurecli
